@@ -10,29 +10,43 @@ body {
     height: 100vh;
     width: 100%;
     background: whitesmoke;
+    overflow-x: hidden;
 }
 
 h1 {
 
-    margin: 50px 330px;
+    /* margin: 50px 330px; */
     font-size: 2.5rem;
     font-weight: bolder;
     color: rgb(57, 57, 57);
+}
+
+.mainDiv{
+    max-width: 1000px;
+    width: 100%;
+    min-height: 700px;
+    margin: 0px auto;
 }
 
 .mainSection {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 1000px;
-    width: 100%;
-    min-height: 700px;
-    margin: 50px auto;
+   
+}
+.boxes{
+    padding: 20px;
 }
 
 
 .boxes:hover {
     background-color: rgb(225, 225, 225);
+    display: inline;
+}
+.boxes:hover button{
+    /* display: inline; */
+    /* opacity: 1; */
+    visibility: visible;
 }
 
 .boxes .icon {
@@ -60,17 +74,27 @@ h1 {
 
 .mainSection button {
 
-    margin-left: 200px;
+    /* margin-left: 200px; */
     margin-top: 15px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     padding: 10px 10px;
     font-size: 0.75rem;
     font-weight: 500;
     border: 1px solid rgb(117, 117, 248);   
     color: rgb(57, 57, 57); 
     background: rgb(189, 189, 255);
+    /* display: none; */
+    /* opacity: 0; */
+    visibility: hidden;
 }
 
+.buttonBox{
+    text-align: center;
+    /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+}
 .boxes p {
 
     text-align: center;
